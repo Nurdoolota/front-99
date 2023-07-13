@@ -4,10 +4,11 @@
       <input
         class="text-field__input"
         :value="value"
-        @input="input"
         :type="type"
-        :placeholder="placeholderInput"
+        @input="input"
+        placeholder="placeholderInput"
       />
+      <label class="text-field__label">{{ label }}</label>
     </div>
     <label class="text-field__label">{{ label }}</label>
   </div>

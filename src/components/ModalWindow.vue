@@ -4,14 +4,22 @@
       <div class="modalWindow">
         <div class="modalWindow__header">
           <div>{{ title }}</div>
-          <form-button label="Закрыть" @click="closeModalWindow" />
+          <form-button
+            classButton="button__blue"
+            label="Закрыть"
+            @click="closeModalWindow"
+          />
         </div>
         <div class="modalWindow__content">
           <slot name="default"></slot>
         </div>
         <div class="modalWindow__footer">
           <slot name="footer"></slot>
-          <form-button label="Отмена" @click="closeModalWindow" />
+          <form-button
+            classButton="button__blue"
+            label="Отмена"
+            @click="closeModalWindow"
+          />
         </div>
       </div>
     </div>

@@ -45,7 +45,13 @@
 </template>
 
 <script>
+import FormButton from "@/components/FormButton.vue";
+
 export default {
+  components: { FormButton },
+  comments: {
+    FormButton,
+  },
   props: {
     course: Object,
     imageUrl: String,
@@ -55,6 +61,7 @@ export default {
       this.$emit("click");
     },
   },
+  methods: {},
 };
 </script>
 <style scoped>
